@@ -1,0 +1,19 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Client" EntryPointType="Client.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Client" Source="Client.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.NetTcp" Source="System.ServiceModel.NetTcp.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Navigation" Source="System.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="System.ServiceModel.Extensions" Source="System.ServiceModel.Extensions.dll" />
+  </Deployment.Parts>
+  <Deployment.OutOfBrowserSettings>
+    <OutOfBrowserSettings ShortName="TDIN Instituicao Financeira">
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Title="Offline Client" />
+      </OutOfBrowserSettings.WindowSettings>
+      <OutOfBrowserSettings.Blurb>
+        Allows the installation of the Client on the PC
+      </OutOfBrowserSettings.Blurb>
+    </OutOfBrowserSettings>
+  </Deployment.OutOfBrowserSettings>
+</Deployment>

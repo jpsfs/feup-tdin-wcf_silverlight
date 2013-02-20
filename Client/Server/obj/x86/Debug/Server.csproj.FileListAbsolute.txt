@@ -1,0 +1,6 @@
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Server\bin\Debug\Server.exe.config
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Server\bin\Debug\Server.exe
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Server\bin\Debug\Server.pdb
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Server\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Server\obj\x86\Debug\Server.exe
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Server\obj\x86\Debug\Server.pdb

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceTcp" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IServiceTcp_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Server.Exceptions" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Server.Serializables" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceTcp_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_DoWork_LoginExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Server.Exceptions" name="detail" element="q1:LoginException" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_Register_GenericExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Server.Exceptions" name="detail" element="q2:GenericException" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_GetSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSession" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_GetSession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_NewTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_NewTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_NewTransactionBalcon_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewTransactionBalcon" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_NewTransactionBalcon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewTransactionBalconResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_PerformTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:PerformTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_PerformTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PerformTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_PerformTransaction_GenericExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Server.Exceptions" name="detail" element="q3:GenericException" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_PerformTransaction_PermissionDeniedExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Server.Exceptions" name="detail" element="q4:PermissionDeniedException" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_ListTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_ListTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_ListTransaction_GenericExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Server.Exceptions" name="detail" element="q5:GenericException" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_ListTransaction_PermissionDeniedExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/Server.Exceptions" name="detail" element="q6:PermissionDeniedException" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_ListClientsEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListClientsEmail" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTcp_ListClientsEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListClientsEmailResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IServiceTcp">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTcp/DoWork" message="tns:IServiceTcp_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTcp/DoWorkResponse" message="tns:IServiceTcp_DoWork_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceTcp/DoWorkLoginExceptionFault" name="LoginExceptionFault" message="tns:IServiceTcp_DoWork_LoginExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTcp/Login" message="tns:IServiceTcp_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTcp/LoginResponse" message="tns:IServiceTcp_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTcp/Register" message="tns:IServiceTcp_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTcp/RegisterResponse" message="tns:IServiceTcp_Register_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceTcp/RegisterGenericExceptionFault" name="GenericExceptionFault" message="tns:IServiceTcp_Register_GenericExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetSession">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTcp/GetSession" message="tns:IServiceTcp_GetSession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTcp/GetSessionResponse" message="tns:IServiceTcp_GetSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="NewTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTcp/NewTransaction" message="tns:IServiceTcp_NewTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTcp/NewTransactionResponse" message="tns:IServiceTcp_NewTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="NewTransactionBalcon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTcp/NewTransactionBalcon" message="tns:IServiceTcp_NewTransactionBalcon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTcp/NewTransactionBalconResponse" message="tns:IServiceTcp_NewTransactionBalcon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="PerformTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTcp/PerformTransaction" message="tns:IServiceTcp_PerformTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTcp/PerformTransactionResponse" message="tns:IServiceTcp_PerformTransaction_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceTcp/PerformTransactionGenericExceptionFault" name="GenericExceptionFault" message="tns:IServiceTcp_PerformTransaction_GenericExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceTcp/PerformTransactionPermissionDeniedExceptionFault" name="PermissionDeniedExceptionFault" message="tns:IServiceTcp_PerformTransaction_PermissionDeniedExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ListTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTcp/ListTransaction" message="tns:IServiceTcp_ListTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTcp/ListTransactionResponse" message="tns:IServiceTcp_ListTransaction_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceTcp/ListTransactionGenericExceptionFault" name="GenericExceptionFault" message="tns:IServiceTcp_ListTransaction_GenericExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServiceTcp/ListTransactionPermissionDeniedExceptionFault" name="PermissionDeniedExceptionFault" message="tns:IServiceTcp_ListTransaction_PermissionDeniedExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ListClientsEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTcp/ListClientsEmail" message="tns:IServiceTcp_ListClientsEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTcp/ListClientsEmailResponse" message="tns:IServiceTcp_ListClientsEmail_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IServiceTcp" type="tns:IServiceTcp">
+    <wsp:PolicyReference URI="#NetTcpBinding_IServiceTcp_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="DoWork">
+      <soap12:operation soapAction="http://tempuri.org/IServiceTcp/DoWork" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="LoginExceptionFault">
+        <soap12:fault use="literal" name="LoginExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/IServiceTcp/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap12:operation soapAction="http://tempuri.org/IServiceTcp/Register" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GenericExceptionFault">
+        <soap12:fault use="literal" name="GenericExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSession">
+      <soap12:operation soapAction="http://tempuri.org/IServiceTcp/GetSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewTransaction">
+      <soap12:operation soapAction="http://tempuri.org/IServiceTcp/NewTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewTransactionBalcon">
+      <soap12:operation soapAction="http://tempuri.org/IServiceTcp/NewTransactionBalcon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerformTransaction">
+      <soap12:operation soapAction="http://tempuri.org/IServiceTcp/PerformTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GenericExceptionFault">
+        <soap12:fault use="literal" name="GenericExceptionFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PermissionDeniedExceptionFault">
+        <soap12:fault use="literal" name="PermissionDeniedExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ListTransaction">
+      <soap12:operation soapAction="http://tempuri.org/IServiceTcp/ListTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GenericExceptionFault">
+        <soap12:fault use="literal" name="GenericExceptionFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PermissionDeniedExceptionFault">
+        <soap12:fault use="literal" name="PermissionDeniedExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ListClientsEmail">
+      <soap12:operation soapAction="http://tempuri.org/IServiceTcp/ListClientsEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceTcp">
+    <wsdl:port name="NetTcpBinding_IServiceTcp" binding="tns:NetTcpBinding_IServiceTcp">
+      <soap12:address location="net.tcp://localhost:4504/Server/ServiceHttp/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:4504/Server/ServiceHttp/</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

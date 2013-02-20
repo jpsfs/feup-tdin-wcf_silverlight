@@ -1,0 +1,9 @@
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\BusinessApplication1.Web\bin\BusinessApplication1.Web.dll
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\BusinessApplication1.Web\bin\BusinessApplication1.Web.pdb
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\BusinessApplication1.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\BusinessApplication1.Web\obj\Debug\BusinessApplication1.Web.Resources.ValidationErrorResources.resources
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\BusinessApplication1.Web\obj\Debug\BusinessApplication1.Web.Resources.RegistrationDataResources.resources
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\BusinessApplication1.Web\obj\Debug\GenerateResource.read.1.tlog
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\BusinessApplication1.Web\obj\Debug\GenerateResource.write.1.tlog
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\BusinessApplication1.Web\obj\Debug\BusinessApplication1.Web.dll
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\BusinessApplication1.Web\obj\Debug\BusinessApplication1.Web.pdb

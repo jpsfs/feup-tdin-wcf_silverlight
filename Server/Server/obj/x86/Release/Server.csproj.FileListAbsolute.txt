@@ -1,0 +1,6 @@
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\Server\bin\Release\Server.exe.config
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\Server\bin\Release\Server.exe
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\Server\bin\Release\Server.pdb
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\Server\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\Server\obj\x86\Release\Server.exe
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\Server\obj\x86\Release\Server.pdb

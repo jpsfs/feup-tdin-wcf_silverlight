@@ -1,0 +1,20 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        EntryPointAssembly="Client"
+        EntryPointType="Client.App">
+  
+    <Deployment.Parts>
+    </Deployment.Parts>
+
+  <Deployment.OutOfBrowserSettings>
+    <OutOfBrowserSettings
+      ShortName="TDIN Instituicao Financeira">
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Title="Offline Client" />
+      </OutOfBrowserSettings.WindowSettings>
+      <OutOfBrowserSettings.Blurb>
+        Allows the installation of the Client on the PC
+      </OutOfBrowserSettings.Blurb>
+    </OutOfBrowserSettings>
+  </Deployment.OutOfBrowserSettings>
+</Deployment>

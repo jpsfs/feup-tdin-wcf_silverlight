@@ -1,0 +1,7 @@
+<OutOfBrowserSettings ShortName="TDIN - Financial Institute" EnableGPUAcceleration="False" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>This Application was developed by José Pedro Silva and Pedro Simeão Carvalho. TDIN - FEUP 2012</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="[FEUP] TDIN - Financial Institute" Height="748" Width="1024" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.Icons />
+</OutOfBrowserSettings>

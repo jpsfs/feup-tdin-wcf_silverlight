@@ -1,0 +1,9 @@
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication.Web\bin\ClientApplication.Web.dll
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication.Web\bin\ClientApplication.Web.pdb
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication.Web\obj\Debug\ClientApplication.Web.Resources.ValidationErrorResources.resources
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication.Web\obj\Debug\ClientApplication.Web.Resources.RegistrationDataResources.resources
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication.Web\obj\Debug\GenerateResource.read.1.tlog
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication.Web\obj\Debug\GenerateResource.write.1.tlog
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication.Web\obj\Debug\ClientApplication.Web.dll
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication.Web\obj\Debug\ClientApplication.Web.pdb

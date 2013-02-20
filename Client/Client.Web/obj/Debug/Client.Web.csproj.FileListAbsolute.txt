@@ -1,0 +1,5 @@
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Client.Web\bin\Client.Web.dll
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Client.Web\bin\Client.Web.pdb
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Client.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Client.Web\obj\Debug\Client.Web.dll
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\Client.Web\obj\Debug\Client.Web.pdb

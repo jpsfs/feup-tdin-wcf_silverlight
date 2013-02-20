@@ -1,0 +1,67 @@
+﻿<navigation:Page
+  x:Class="ClientApplication.Home" 
+  xmlns:local="clr-namespace:ClientApplication.Controls"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+  mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720"  
+  Style="{StaticResource PageStyle}" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+  <Grid x:Name="LayoutRoot">
+    <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+
+      <StackPanel x:Name="ContentStackPanel" Style="{StaticResource ContentStackPanelStyle}">
+
+        <TextBlock x:Name="HeaderText" Style="{StaticResource HeaderTextStyle}" 
+                           Text="{Binding Path=Strings.HomePageTitle, Source={StaticResource ApplicationResources}}"/>
+                <Border x:Name="RequireLoginBorder" Visibility="Collapsed" BorderBrush="Silver" Style="{StaticResource RequiredBorderStyle}" BorderThickness="1" Height="27" Width="525">
+                    <TextBlock x:Name="RequireLoginText" Style="{StaticResource ContentTextStyle}" Foreground="White"
+                               Text="Please enter on the application. The login button is on the top right of the screen."/>
+                </Border>
+                
+                <Border x:Name="LoggedInBorder" Width="800">
+                    <local:BusyIndicator x:Name="busyIndicatorGrid" BusyContent="Loading ..."
+                             IsBusy="False">
+                    <Grid Name="stackPanel1" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0">
+                                <sdk:Label Content="Search: "/>
+                                <TextBox Height="23" HorizontalAlignment="Left" Margin="-1,0,266,0" Name="textBoxSearch" VerticalAlignment="Top" Width="209" TextInput="textBoxSearch_TextChanged" />
+                                <Button Height="23" HorizontalAlignment="Right" x:Name="NewTransaction" VerticalAlignment="Top" Width="130" Grid.Row="0" Click="NewTransaction_Click">
+                                    <Button.Content>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Image Source="../Assets/Icons/new-16x16.png"
+					                            Width="16"
+					                            Height="16" />
+                                            <TextBlock Text="New Transaction" Margin="10,0,0,0" />
+                                        </StackPanel>
+                                    </Button.Content>
+                                </Button>
+                                <Button Height="23" HorizontalAlignment="Right" x:Name="RefreshTransactionsDataGrid" VerticalAlignment="Top" Width="130" Grid.Row="0" Click="RefreshTransactionsDataGrid_Click" Margin="15,0,0,0">
+                                    <Button.Content>
+                                        <StackPanel Orientation="Horizontal" >
+                                            <Image Source="../Assets/Icons/refresh-16x16.png"
+					                            Width="16"
+					                            Height="16" />
+                                            <TextBlock Text="Refresh" Margin="10,0,0,0" />
+                                        </StackPanel>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+                            <sdk:DataGrid MaxHeight="600" x:Name="TransactionsDataGrid" Width="800" AutoGenerateColumns="False" Grid.Row="1" Visibility="Collapsed" IsReadOnly="True" GridLinesVisibility="All" />
+                        <TextBlock Width="800" x:Name="NoRecordsFoundTransactionsDataGrid" Style="{StaticResource ContentTextStyle}" TextAlignment="Center" Text="No Records Found!" Grid.Row="1" Visibility="Collapsed"/>
+                            
+                        </Grid>
+                   </local:BusyIndicator>
+                    
+                </Border>
+            </StackPanel>
+
+    </ScrollViewer>
+  </Grid>
+
+</navigation:Page>

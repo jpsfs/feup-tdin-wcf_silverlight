@@ -1,0 +1,41 @@
+﻿<navigation:Page 
+  x:Class="ClientApplication.About" 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+  mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480"  
+  Style="{StaticResource PageStyle}">
+
+  <Grid x:Name="LayoutRoot">
+    <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+
+      <StackPanel x:Name="ContentStackPanel" Style="{StaticResource ContentStackPanelStyle}">
+
+        <TextBlock x:Name="HeaderText" Style="{StaticResource HeaderTextStyle}" 
+                           Text="{Binding Path=Strings.AboutPageTitle, Source={StaticResource ApplicationResources}}"/>
+                <TextBlock x:Name="ContentText" Style="{StaticResource ContentTextStyle}">
+                    <TextBlock.Text>
+                        Developed By:
+                    </TextBlock.Text>
+                </TextBlock>
+                <Grid HorizontalAlignment="Left" Margin="60, 0, 0, 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <HyperlinkButton NavigateUri="http://jpsfs.com" TargetName="_blank">
+                        080509135 - José Pedro Silva
+                    </HyperlinkButton>
+                    <HyperlinkButton Grid.Row="1"  NavigateUri="http://pesimeao.com" TargetName="_blank">
+                        080509157 - Pedro Simeão Carvalho
+                    </HyperlinkButton>
+
+                </Grid>
+                <Button x:Name="UpdateButton" Width="150" Visibility="Collapsed" Content="Update Application" Click="UpdateButton_Click" Margin="0,60,0,0" />
+      </StackPanel>
+
+    </ScrollViewer>
+  </Grid>
+
+</navigation:Page>

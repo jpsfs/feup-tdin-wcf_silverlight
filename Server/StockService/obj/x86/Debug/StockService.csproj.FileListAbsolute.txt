@@ -1,0 +1,10 @@
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\bin\Debug\StockService.exe.config
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\bin\Debug\StockService.exe
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\bin\Debug\StockService.pdb
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\obj\x86\Debug\StockService.Properties.Resources.resources
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\obj\x86\Debug\StockService.exe
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\obj\x86\Debug\StockService.pdb
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\StockService\obj\x86\Debug\StockService.Main.resources

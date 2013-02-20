@@ -1,0 +1,3 @@
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2Console\ClientApplication
+Generated_Code\ClientApplication.Web.g.cs
+Generated_Code\Models\Shared\User.shared.cs

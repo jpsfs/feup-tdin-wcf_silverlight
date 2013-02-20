@@ -1,0 +1,6 @@
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\WCFTest\bin\Debug\WCFTest.exe.config
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\WCFTest\bin\Debug\WCFTest.exe
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\WCFTest\bin\Debug\WCFTest.pdb
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\WCFTest\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\WCFTest\obj\x86\Debug\WCFTest.exe
+D:\Documentos\4ANO\TDIN\feup_tdin\Projeto2\WCFTest\obj\x86\Debug\WCFTest.pdb
